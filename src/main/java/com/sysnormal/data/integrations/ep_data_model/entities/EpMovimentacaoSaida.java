@@ -1,4 +1,4 @@
-package com.sysnormal.libs.db.entities.integrations.ep_entities;
+package com.sysnormal.data.integrations.ep_data_model.entities;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -9,6 +9,9 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
+/**
+ * Entity class
+ */
 @Getter
 @Setter
 @Entity
@@ -58,11 +61,4 @@ public class EpMovimentacaoSaida extends BaseEpTableModel {
     private LocalDateTime dtCancel;
 
     @Column(name = "PERCDESCFIN")
-    private BigDecimal percDescFin;
-
-
-    protected static final long TABLE_ID = 40510L;
-    public static long getTableId() {
-        return TABLE_ID;
-    }
-}
+    private BigDecimal percDescFin;}

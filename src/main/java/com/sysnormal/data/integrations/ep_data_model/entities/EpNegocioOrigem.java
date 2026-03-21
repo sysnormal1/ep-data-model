@@ -1,4 +1,4 @@
-package com.sysnormal.libs.db.entities.integrations.ep_entities;
+package com.sysnormal.data.integrations.ep_data_model.entities;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -6,6 +6,9 @@ import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 
+/**
+ * Entity class
+ */
 @Getter
 @Setter
 @Entity
@@ -13,10 +16,4 @@ import lombok.Setter;
 public class EpNegocioOrigem extends BaseEpTableModel {
 
     @Column(name = "DESCRICAO")
-    private String descricao;
-
-    protected static final long TABLE_ID = 40190L;
-    public static long getTableId() {
-        return TABLE_ID;
-    }
-}
+    private String descricao;}

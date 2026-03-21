@@ -1,6 +1,6 @@
-package com.sysnormal.libs.db.entities.integrations.ep_entities;
+package com.sysnormal.data.integrations.ep_data_model.entities;
 
-import com.sysnormal.libs.db.entities.base_entities.BaseEntity;
+import com.sysnormal.data.base_data_model.entities.BaseEntity;
 import jakarta.persistence.Column;
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
@@ -11,6 +11,9 @@ import org.hibernate.annotations.Immutable;
 
 import java.time.LocalDateTime;
 
+/**
+ * Entity class
+ */
 @Getter
 @Setter
 @Entity
@@ -28,10 +31,4 @@ public class EpUnifCarga extends BaseEntity {
     private LocalDateTime dtUnificacao;
 
     @Column(name = "MAQUINAUNIFICACAO")
-    private String maquinaUnificacao;
-
-    protected static final long TABLE_ID = 40100L;
-    public static long getTableId() {
-        return TABLE_ID;
-    }
-}
+    private String maquinaUnificacao;}

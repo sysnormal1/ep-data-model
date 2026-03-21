@@ -1,4 +1,4 @@
-package com.sysnormal.libs.db.entities.integrations.ep_entities;
+package com.sysnormal.data.integrations.ep_data_model.entities;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -9,6 +9,9 @@ import lombok.Setter;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
+/**
+ * Entity class
+ */
 @Getter
 @Setter
 @Entity
@@ -49,11 +52,4 @@ public class EpProduto extends BaseEpTableModel {
     private BigDecimal pesoLiqUn;
 
     @Column(name = "TEMPERARMAZPADRAO")
-    private BigDecimal temperArmazPadrao;
-
-
-    protected static final long TABLE_ID = 40200L;
-    public static long getTableId() {
-        return TABLE_ID;
-    }
-}
+    private BigDecimal temperArmazPadrao;}

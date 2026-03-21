@@ -1,4 +1,4 @@
-package com.sysnormal.libs.db.entities.integrations.ep_entities;
+package com.sysnormal.data.integrations.ep_data_model.entities;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -8,6 +8,9 @@ import lombok.Setter;
 
 import java.time.LocalDateTime;
 
+/**
+ * Entity class
+ */
 @Getter
 @Setter
 @Entity
@@ -70,12 +73,4 @@ public class EpNfEnt extends BaseEpTableModel {
     private String placa;
 
     @Column(name = "ORIGEMPED", length = 1)
-    private String origemPed;
-
-
-
-    protected static final long TABLE_ID = 40600L;
-    public static long getTableId() {
-        return TABLE_ID;
-    }
-}
+    private String origemPed;}

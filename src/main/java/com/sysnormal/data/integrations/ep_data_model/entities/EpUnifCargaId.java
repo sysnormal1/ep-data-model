@@ -1,4 +1,4 @@
-package com.sysnormal.libs.db.entities.integrations.ep_entities;
+package com.sysnormal.data.integrations.ep_data_model.entities;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
@@ -8,6 +8,9 @@ import lombok.Setter;
 import java.io.Serializable;
 import java.util.Objects;
 
+/**
+ * Entity class
+ */
 @Getter @Setter
 @Embeddable
 public class EpUnifCargaId implements Serializable {

@@ -1,4 +1,7 @@
 # Sysnormal Database Ep Integration Entities Library
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.sysnormal1.data.integrations/consulta-data-model.svg)](https://central.sonatype.com/artifact/io.github.sysnormal1.data.integrations/ep-data-model)
+[![MvnRepository](https://img.shields.io/badge/mvnrepository-view-blue)](https://mvnrepository.com/artifact/io.github.sysnormal1.data.integrations/ep-data-model)
+[![GitHub tag](https://img.shields.io/github/v/tag/sysnormal1/ep-data-model)](https://github.com/sysnormal1/ep-data-model)
 
 ---
 
@@ -34,7 +37,7 @@ Add this dependency to your application’s `pom.xml`:
 <dependency>
     <groupId>io.github.sysnormal1.data.integrations>
     <artifactId>ep-data-model</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.3</version>
 </dependency>
 ```
 
